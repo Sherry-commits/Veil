@@ -598,27 +598,8 @@ export default function App(){
               )}
 
               {/* LOCKED TEASER + UPGRADE — free users, very bottom */}
-              {!isPaid&&(
-                <>
-                  <div className="rbody" style={{paddingTop:28,paddingBottom:0}}>
-                    <div className="divider"><div className="dl"/><div className="dd"/><div className="dl"/></div>
-                    <div className="section locked" style={{marginBottom:0}}>
-                      <div className="locked-blur">
-                        <div className="dnum">7</div>
-                        <div className="dlbl">Life Path Number</div>
-                        <p className="stext" style={{marginTop:16}}>Your life path carries the vibration of the seeker, the thinker, and the mystic. You are drawn to hidden truths, forever searching beyond the surface.</p>
-                        <div className="fortune-box" style={{marginTop:16}}>
-                          <div className="fperiod">The Year Ahead</div>
-                          <div className="ftext">A powerful cycle of transformation is beginning. The energies align for deep inner work and unexpected breakthroughs that will redefine your path entirely.</div>
-                        </div>
-                      </div>
-                      <div className="locked-overlay">
-                        <div className="lock-icon">🔒</div>
-                        <div className="lock-msg">Unlock Your Full Destiny</div>
-                      </div>
-                    </div>
-                  </div>
 
+              
                   <div className="upgrade-box" style={{marginTop:24}}>
                     <div className="upgrade-title">Your Destiny Awaits</div>
                     <div className="upgrade-sub">Reveal the complete reading with your birth chart</div>
@@ -629,7 +610,7 @@ export default function App(){
                       <div className="upgrade-feat">Your personal power stone</div>
                       <div className="upgrade-feat">Downloadable PDF destiny report</div>
                     </div>
-                    <div className="upgrade-price">$2.99</div>
+                    <div className="upgrade-price">$4.99</div>
                     <div className="upgrade-price-sub">One-time · Instant delivery</div>
                     <button className="btn-upgrade" onClick={()=>{setResult(null);setMode("paid");}}>✦ Unlock Full Report ✦</button>
                   </div>
