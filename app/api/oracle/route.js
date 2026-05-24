@@ -11,10 +11,17 @@ export async function POST(request) {
     body: JSON.stringify({
       model: 'claude-sonnet-4-6',
       max_tokens: max_tokens || 1600,
+      stream: true,
       messages,
     }),
   })
 
-  const data = await res.json()
-  return Response.json(data)
+  // 直接把上游的stream透传给前端
+  return new Response(res.body, {
+    headers: {
+      'Content-Type': 'text/event-stream',
+      'Cache-Control': 'no-cache',
+      'Connection': 'keep-alive',
+    },
+  })
 }
