@@ -318,32 +318,68 @@ export default function App(){
 
   const canSubmit=mode==="free"?name.trim().length>0:name.trim()&&month&&day&&year&&hour;
 
-  const handleReveal=async()=>{
-    if(!canSubmit){setError("Please complete all fields.");return;}
-    setError("");setLoading(true);setResult(null);setPortraitUrl(null);
-    const prompt=mode==="paid"?paidPrompt(name.trim(),month,day,year,hour):freePrompt(name.trim());
-    try{
-      const res=await fetch("/api/oracle",{
-        method:"POST",headers:{"Content-Type":"application/json"},
-        body:JSON.stringify({model:"claude-sonnet-4-20250514",max_tokens:1600,messages:[{role:"user",content:prompt}]})
-      });
-      const data=await res.json();
-      const text=data.content?.map(b=>b.text||"").join("")||"";
-      const parsed=parse(text);
-      if(parsed){
-        setResult({...parsed,inputName:name.trim()});
-        setIsPaid(mode==="paid");
-        // 图像API接入后取消注释:
-        // const url=await generatePortrait(parsed.element,name.trim());
-        // setPortraitUrl(url);
-      } else {
-        setError("The oracle is silent. Please try again.");
+  const handleReveal = async () => {
+  if (!canSubmit) { setError("Please complete all fields."); return; }
+  setError(""); setLoading(true); setResult(null); setPortraitUrl(null);
+  const prompt = mode === "paid"
+    ? paidPrompt(name.trim(), month, day, year, hour)
+    : freePrompt(name.trim());
+
+  try {
+    const res = await fetch("/api/oracle", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ max_tokens: 1600, messages: [{ role: "user", content: prompt }] })
+    });
+
+    const reader = res.body.getReader();
+    const decoder = new TextDecoder();
+    let buffer = "";
+    let fullText = "";
+
+    while (true) {
+      const { done, value } = await reader.read();
+      if (done) break;
+      buffer += decoder.decode(value, { stream: true });
+      const lines = buffer.split("\n");
+      buffer = lines.pop();
+
+      for (const line of lines) {
+        if (!line.startsWith("data: ")) continue;
+        const data = line.slice(6).trim();
+        if (data === "[DONE]") continue;
+        try {
+          const json = JSON.parse(data);
+          // Anthropic streaming delta
+          const delta = json?.delta?.text || json?.choices?.[0]?.delta?.content || "";
+          if (delta) {
+            fullText += delta;
+            // 尝试实时解析，有完整JSON就先渲染
+            const parsed = parse(fullText);
+            if (parsed) {
+              setResult({ ...parsed, inputName: name.trim() });
+              setIsPaid(mode === "paid");
+              setLoading(false);
+            }
+          }
+        } catch { /* 继续累积 */ }
       }
-    }catch{
-      setError("The veil could not be lifted. Please try again.");
     }
-    setLoading(false);
-  };
+
+    // 流结束后最终解析一次
+    const parsed = parse(fullText);
+    if (parsed) {
+      setResult({ ...parsed, inputName: name.trim() });
+      setIsPaid(mode === "paid");
+    } else if (!result) {
+      setError("The oracle is silent. Please try again.");
+    }
+
+  } catch {
+    setError("The veil could not be lifted. Please try again.");
+  }
+  setLoading(false);
+};
 
   const reset=()=>{setResult(null);setPortraitUrl(null);setIsPaid(false);setName("");setMonth("");setDay("");setYear("");setHour("");};
 
