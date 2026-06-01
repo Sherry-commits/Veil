@@ -27,7 +27,7 @@ const CSS = `
   .stars{position:fixed;inset:0;pointer-events:none;z-index:0;}
   .star{position:absolute;width:2px;height:2px;background:var(--gl);border-radius:50%;opacity:0;animation:twinkle var(--dur) var(--delay) infinite;}
   @keyframes twinkle{0%,100%{opacity:0;}50%{opacity:var(--b);}}
-  .wrap{position:relative;z-index:1;max-width:620px;margin:0 auto;padding:56px 20px 80px;}
+  .wrap{position:relative;z-index:1;max-width:620px;margin:0 auto;padding:56px 20px 100px;}
 
   /* HEADER */
   .hdr{text-align:center;margin-bottom:52px;}
@@ -176,6 +176,8 @@ const CSS = `
   .dd{width:6px;height:6px;background:var(--gold);transform:rotate(45deg);flex-shrink:0;}
   .rfooter{padding:18px 32px;background:rgba(138,111,50,.05);border-top:1px solid rgba(138,111,50,.2);text-align:center;}
   .rfooter-txt{font-family:'Cinzel',serif;font-size:9px;letter-spacing:.28em;text-transform:uppercase;color:var(--tl);opacity:.65;}
+  .rfooter-link{font-family:'Cinzel',serif;font-size:8.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--tm);text-decoration:none;transition:color .3s;}
+  .rfooter-link:hover{color:var(--gl);}
   .reset-btn{display:block;margin:0 32px 32px;width:calc(100% - 64px);padding:13px;background:transparent;border:1px solid rgba(138,111,50,.35);color:var(--gd);font-family:'Cinzel',serif;font-size:10px;letter-spacing:.2em;text-transform:uppercase;cursor:pointer;transition:all .2s;}
   .reset-btn:hover{border-color:var(--gold);color:var(--gold);}
   .err{background:rgba(180,50,50,.08);border:1px solid rgba(180,50,50,.3);color:#b07070;padding:11px 14px;font-family:'Cinzel',serif;font-size:11px;letter-spacing:.1em;text-align:center;margin-top:14px;}
@@ -408,7 +410,7 @@ export default function App(){
               <p className="card-intro">What does your name truly mean?<br/>Enter it below and the oracle will speak.</p>
               <div className="mode-tabs">
                 <button className={`mtab${mode==="free"?" active":""}`} onClick={()=>setMode("free")}>Free Reading</button>
-                <button className={`mtab${mode==="paid"?" active":""}`} onClick={()=>setMode("paid")}>Full Destiny<span className="mtab-badge">$2.99</span></button>
+                <button className={`mtab${mode==="paid"?" active":""}`} onClick={()=>setMode("paid")}>Full Destiny<span className="mtab-badge">$9.90</span></button>
               </div>
               <div className="fgroup">
                 <label className="flabel">Your Name</label>
@@ -599,7 +601,7 @@ export default function App(){
 
               {/* LOCKED TEASER + UPGRADE — free users, very bottom */}
 
-              
+              {result && !isPaid && (
                   <div className="upgrade-box" style={{marginTop:24}}>
                     <div className="upgrade-title">Your Destiny Awaits</div>
                     <div className="upgrade-sub">Reveal the complete reading with your birth chart</div>
@@ -610,15 +612,19 @@ export default function App(){
                       <div className="upgrade-feat">Your personal power stone</div>
                       <div className="upgrade-feat">Downloadable PDF destiny report</div>
                     </div>
-                    <div className="upgrade-price">$4.99</div>
+                    <div className="upgrade-price">$9.90</div>
                     <div className="upgrade-price-sub">One-time · Instant delivery</div>
                     <button className="btn-upgrade" onClick={()=>{setResult(null);setMode("paid");}}>✦ Unlock Full Report ✦</button>
                   </div>
-                </>
               )}
 
               <div className="rfooter">
                 <div className="rfooter-txt">✦ Veil by Wonlv · veil.wonlv.com ✦</div>
+                <div style={{marginTop:8,display:'flex',justifyContent:'center',gap:16}}>
+                  <a href="/privacy" className="rfooter-link">Privacy</a>
+                  <a href="/terms" className="rfooter-link">Terms</a>
+                  <a href="mailto:support@veil.wonlv.com" className="rfooter-link">support@veil.wonlv.com</a>
+                </div>
               </div>
               <button className="reset-btn" onClick={reset}>✦ Begin a New Reading ✦</button>
 

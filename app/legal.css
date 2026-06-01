@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;500;600&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap');
+
+.legal-page {
+  min-height: 100vh;
+  background: #0a0806;
+  font-family: 'EB Garamond', serif;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.legal-stars {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.legal-star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: #e8c96a;
+  border-radius: 50%;
+  opacity: 0;
+  animation: legal-twinkle var(--dur, 3s) var(--delay, 0s) infinite;
+}
+
+@keyframes legal-twinkle {
+  0%, 100% { opacity: 0; }
+  50% { opacity: var(--b, 0.8); }
+}
+
+.legal-wrap {
+  position: relative;
+  z-index: 1;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 56px 20px 120px;
+}
+
+.legal-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.legal-title {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #e8c96a;
+  letter-spacing: 3px;
+  margin-bottom: 8px;
+}
+
+.legal-back {
+  display: inline-block;
+  margin-top: 12px;
+  font-family: 'Cinzel', serif;
+  font-size: 12px;
+  color: #4a3820;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: color 0.3s;
+}
+
+.legal-back:hover {
+  color: #e8c96a;
+}
+
+.legal-content {
+  background: #1a1208;
+  border: 1px solid #4a3820;
+  border-radius: 8px;
+  padding: 40px 36px;
+}
+
+.legal-content h1 {
+  font-family: 'Cinzel', serif;
+  font-size: 24px;
+  color: #e8c96a;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+
+.legal-content .last-updated {
+  font-family: 'Cinzel', serif;
+  font-size: 11px;
+  color: #4a3820;
+  letter-spacing: 1px;
+  margin-bottom: 32px;
+}
+
+.legal-content h2 {
+  font-family: 'Cinzel', serif;
+  font-size: 18px;
+  color: #e8c96a;
+  margin-top: 32px;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+}
+
+.legal-content h3 {
+  font-family: 'Cinzel', serif;
+  font-size: 15px;
+  color: #c9a84c;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+.legal-content p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #d4c5a0;
+  margin-bottom: 14px;
+}
+
+.legal-content ul, .legal-content ol {
+  margin: 12px 0;
+  padding-left: 24px;
+  color: #d4c5a0;
+}
+
+.legal-content li {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 6px;
+}
+
+.legal-content a {
+  color: #e8c96a;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.legal-content a:hover {
+  color: #fff;
+}
+
+.legal-content strong {
+  color: #e8c96a;
+}
+
+@media (max-width: 600px) {
+  .legal-wrap {
+    padding: 32px 16px 100px;
+  }
+
+  .legal-title {
+    font-size: 22px;
+  }
+
+  .legal-content {
+    padding: 24px 20px;
+  }
+
+  .legal-content h1 {
+    font-size: 20px;
+  }
+
+  .legal-content h2 {
+    font-size: 16px;
+  }
+
+  .legal-content p, .legal-content li {
+    font-size: 15px;
+  }
+}
