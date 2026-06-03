@@ -416,37 +416,6 @@ export default function App(){
             <p className="subtitle">Reveal the Soul Within Your Name</p>
           </div>
 
-          {/* LANDING INTRO */}
-          {!result&&!loading&&(
-            <div className="landing">
-              <p className="landing-desc">
-                VEIL reveals the soul within your name — drawing on ancient etymology, elemental wisdom, and destiny numerology. Free for everyone. Unlock the full birth-chart report for $9.90.
-              </p>
-              <div className="landing-tiers">
-                <div className="ltier">
-                  <div className="ltier-label">Free Reading</div>
-                  <ul className="ltier-list">
-                    <li>Name origin &amp; meaning</li>
-                    <li>Soul essence &amp; core traits</li>
-                    <li>Elemental nature</li>
-                    <li>2026 guidance &amp; talisman</li>
-                  </ul>
-                </div>
-                <div className="ltier ltier--paid">
-                  <div className="ltier-badge">$9.90</div>
-                  <div className="ltier-label">Full Destiny</div>
-                  <ul className="ltier-list">
-                    <li>Everything in Free</li>
-                    <li>Life Path Number</li>
-                    <li>Birth chart energy cycle</li>
-                    <li>The year ahead forecast</li>
-                    <li>Personal power stone</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          )}
-
           {/* FORM */}
           {!result&&!loading&&(
             <div className="card">
@@ -490,6 +459,37 @@ export default function App(){
               <button className="btn" onClick={handleReveal} disabled={!canSubmit}>
                 ✦ {mode==="paid"?"Unveil My Full Destiny":"Reveal My Name"} ✦
               </button>
+            </div>
+          )}
+
+          {/* PRICING */}
+          {!result&&!loading&&(
+            <div className="landing">
+              <p className="landing-desc">
+                VEIL reveals the soul within your name — drawing on ancient etymology, elemental wisdom, and destiny numerology. Free for everyone. Unlock the full birth-chart report for $9.90.
+              </p>
+              <div className="landing-tiers">
+                <div className="ltier">
+                  <div className="ltier-label">Free Reading</div>
+                  <ul className="ltier-list">
+                    <li>Name origin &amp; meaning</li>
+                    <li>Soul essence &amp; core traits</li>
+                    <li>Elemental nature</li>
+                    <li>2026 guidance &amp; talisman</li>
+                  </ul>
+                </div>
+                <div className="ltier ltier--paid">
+                  <div className="ltier-badge">$9.90</div>
+                  <div className="ltier-label">Full Destiny</div>
+                  <ul className="ltier-list">
+                    <li>Everything in Free</li>
+                    <li>Life Path Number</li>
+                    <li>Birth chart energy cycle</li>
+                    <li>The year ahead forecast</li>
+                    <li>Personal power stone</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           )}
 
