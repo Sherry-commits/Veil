@@ -154,6 +154,18 @@ const CSS = `
   .talisman-link{display:inline-block;font-family:'Cinzel',serif;font-size:9.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);border:1px solid rgba(201,168,76,.4);padding:6px 14px;text-decoration:none;transition:all .2s;}
   .talisman-link:hover{background:rgba(201,168,76,.1);border-color:var(--gold);}
 
+  /* LANDING INTRO */
+  .landing{margin-bottom:32px;}
+  .landing-desc{font-family:'EB Garamond',serif;font-style:italic;font-size:17px;line-height:1.9;color:var(--tl);text-align:center;margin-bottom:24px;}
+  .landing-tiers{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+  .ltier{background:rgba(138,111,50,.05);border:1px solid rgba(138,111,50,.2);padding:18px 20px;position:relative;}
+  .ltier--paid{border-color:rgba(201,168,76,.38);background:rgba(201,168,76,.04);}
+  .ltier-badge{position:absolute;top:-11px;right:12px;background:linear-gradient(135deg,var(--gd),var(--gold));color:var(--td);font-family:'Cinzel',serif;font-size:10px;letter-spacing:.15em;padding:3px 11px;font-weight:600;}
+  .ltier-label{font-family:'Cinzel',serif;font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:12px;}
+  .ltier-list{list-style:none;display:flex;flex-direction:column;gap:7px;}
+  .ltier-list li{font-size:14px;color:var(--tm);display:flex;align-items:flex-start;gap:8px;line-height:1.5;}
+  .ltier-list li::before{content:'✦';color:var(--gd);font-size:9px;flex-shrink:0;margin-top:3px;}
+
   /* LOCKED / UPGRADE */
   .locked{position:relative;overflow:hidden;}
   .locked-blur{filter:blur(5px);pointer-events:none;user-select:none;}
@@ -403,6 +415,37 @@ export default function App(){
             <h1 className="title">Veil</h1>
             <p className="subtitle">Reveal the Soul Within Your Name</p>
           </div>
+
+          {/* LANDING INTRO */}
+          {!result&&!loading&&(
+            <div className="landing">
+              <p className="landing-desc">
+                VEIL reveals the soul within your name — drawing on ancient etymology, elemental wisdom, and destiny numerology. Free for everyone. Unlock the full birth-chart report for $9.90.
+              </p>
+              <div className="landing-tiers">
+                <div className="ltier">
+                  <div className="ltier-label">Free Reading</div>
+                  <ul className="ltier-list">
+                    <li>Name origin &amp; meaning</li>
+                    <li>Soul essence &amp; core traits</li>
+                    <li>Elemental nature</li>
+                    <li>2026 guidance &amp; talisman</li>
+                  </ul>
+                </div>
+                <div className="ltier ltier--paid">
+                  <div className="ltier-badge">$9.90</div>
+                  <div className="ltier-label">Full Destiny</div>
+                  <ul className="ltier-list">
+                    <li>Everything in Free</li>
+                    <li>Life Path Number</li>
+                    <li>Birth chart energy cycle</li>
+                    <li>The year ahead forecast</li>
+                    <li>Personal power stone</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          )}
 
           {/* FORM */}
           {!result&&!loading&&(
