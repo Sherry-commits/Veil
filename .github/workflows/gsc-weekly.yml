@@ -1,4 +1,4 @@
-name: Weekly GSC Submission
+name: Weekly IndexNow Submission
 
 on:
   schedule:
@@ -6,7 +6,7 @@ on:
   workflow_dispatch:        # Allow manual trigger from GitHub UI
 
 jobs:
-  submit-to-gsc:
+  submit-indexnow:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -15,7 +15,5 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Submit all blog posts to Google Search Console
-        env:
-          GSC_CREDENTIALS_JSON: ${{ secrets.GSC_CREDENTIALS_JSON }}
+      - name: Submit all blog posts to IndexNow
         run: node .github/scripts/submit-all-to-gsc.js
