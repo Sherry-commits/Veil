@@ -1,0 +1,21 @@
+name: Weekly GSC Submission
+
+on:
+  schedule:
+    - cron: '0 9 * * 1'   # Every Monday 9:00 AM UTC
+  workflow_dispatch:        # Allow manual trigger from GitHub UI
+
+jobs:
+  submit-to-gsc:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Submit all blog posts to Google Search Console
+        env:
+          GSC_CREDENTIALS_JSON: ${{ secrets.GSC_CREDENTIALS_JSON }}
+        run: node .github/scripts/submit-all-to-gsc.js

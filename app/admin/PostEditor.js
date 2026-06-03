@@ -1,5 +1,5 @@
 'use client'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { useRouter } from 'next/navigation'
 
 function slugify(str) {
@@ -35,12 +35,52 @@ export default function PostEditor({ slug: initialSlug, initialContent, initialS
   const [body, setBody] = useState(parsed?.body || '')
   const [slugEdited, setSlugEdited] = useState(!isNew)
   const [saving, setSaving] = useState(false)
+  const [uploading, setUploading] = useState(false)
   const [error, setError] = useState('')
   const [success, setSuccess] = useState('')
+  const textareaRef = useRef(null)
+  const fileInputRef = useRef(null)
 
   useEffect(() => {
     if (!slugEdited && isNew) setSlug(slugify(title))
   }, [title, slugEdited, isNew])
+
+  function insertAtCursor(text) {
+    const ta = textareaRef.current
+    if (!ta) { setBody(b => b + text); return }
+    const start = ta.selectionStart
+    const end = ta.selectionEnd
+    const newBody = body.slice(0, start) + text + body.slice(end)
+    setBody(newBody)
+    setTimeout(() => {
+      ta.selectionStart = ta.selectionEnd = start + text.length
+      ta.focus()
+    }, 0)
+  }
+
+  async function handleImageUpload(e) {
+    const file = e.target.files?.[0]
+    if (!file) return
+    if (!file.type.startsWith('image/')) { setError('Please select an image file.'); return }
+    if (file.size > 5 * 1024 * 1024) { setError('Image must be under 5 MB.'); return }
+
+    setUploading(true)
+    setError('')
+    const form = new FormData()
+    form.append('file', file)
+    const res = await fetch('/api/admin/upload', { method: 'POST', body: form })
+    setUploading(false)
+    fileInputRef.current.value = ''
+
+    if (res.ok) {
+      const { url } = await res.json()
+      const alt = file.name.replace(/\.[^.]+$/, '').replace(/[-_]+/g, ' ')
+      insertAtCursor(`\n![${alt}](${url})\n`)
+    } else {
+      const d = await res.json()
+      setError(d.error || 'Upload failed.')
+    }
+  }
 
   async function handleSave() {
     if (!title || !slug || !body) { setError('Title, slug, and content are required.'); return }
@@ -68,7 +108,6 @@ export default function PostEditor({ slug: initialSlug, initialContent, initialS
       </div>
 
       <div style={card}>
-        {/* Frontmatter fields */}
         <div style={grid2}>
           <Field label="Title" required>
             <input style={input} value={title} onChange={e => setTitle(e.target.value)} placeholder="Post title" />
@@ -92,15 +131,38 @@ export default function PostEditor({ slug: initialSlug, initialContent, initialS
       </div>
 
       <div style={{ ...card, marginTop: 12 }}>
-        <Field label="Markdown Content" required>
-          <textarea
-            style={{ ...input, minHeight: 480, resize: 'vertical', fontFamily: '"Courier New", monospace', fontSize: 14, lineHeight: 1.7 }}
-            value={body}
-            onChange={e => setBody(e.target.value)}
-            placeholder="Write your post in Markdown..."
+        {/* Toolbar */}
+        <div style={{ display: 'flex', gap: 8, marginBottom: 10, alignItems: 'center' }}>
+          <span style={toolbarLabel}>Markdown Content <span style={{ color: '#c9a84c' }}>*</span></span>
+          <div style={{ flex: 1 }} />
+          <input
+            ref={fileInputRef}
+            type="file"
+            accept="image/*"
+            style={{ display: 'none' }}
+            onChange={handleImageUpload}
           />
-          <div style={{ fontSize: 12, color: '#999', marginTop: 4 }}>~{Math.round(body.split(/\s+/).filter(Boolean).length)} words</div>
-        </Field>
+          <button
+            type="button"
+            onClick={() => fileInputRef.current?.click()}
+            disabled={uploading}
+            style={toolbarBtn}
+          >
+            {uploading ? '⏳ Uploading...' : '🖼 Insert Image'}
+          </button>
+          <button type="button" onClick={() => insertAtCursor('\n**bold text**')} style={toolbarBtn}>B</button>
+          <button type="button" onClick={() => insertAtCursor('\n*italic text*')} style={{ ...toolbarBtn, fontStyle: 'italic' }}>I</button>
+          <button type="button" onClick={() => insertAtCursor('\n## Heading')} style={toolbarBtn}>H2</button>
+          <button type="button" onClick={() => insertAtCursor('\n[link text](url)')} style={toolbarBtn}>🔗</button>
+        </div>
+        <textarea
+          ref={textareaRef}
+          style={{ ...input, minHeight: 480, resize: 'vertical', fontFamily: '"Courier New", monospace', fontSize: 14, lineHeight: 1.7 }}
+          value={body}
+          onChange={e => setBody(e.target.value)}
+          placeholder="Write your post in Markdown..."
+        />
+        <div style={{ fontSize: 12, color: '#999', marginTop: 4 }}>~{Math.round(body.split(/\s+/).filter(Boolean).length)} words</div>
       </div>
 
       {error && <div style={{ background: '#fff5f5', border: '1px solid #f5c6c6', color: '#b07070', padding: '10px 16px', marginTop: 12, fontSize: 14 }}>{error}</div>}
@@ -134,6 +196,8 @@ const backLink = { color: '#8a6f32', textDecoration: 'none', fontFamily: 'Cinzel
 const card = { background: '#fff', padding: '24px', border: '1px solid #e8e4de' }
 const grid2 = { display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0 20px' }
 const labelStyle = { display: 'block', fontFamily: 'Cinzel, serif', fontSize: 10, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#8a6f32', marginBottom: 7 }
+const toolbarLabel = { fontFamily: 'Cinzel, serif', fontSize: 10, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#8a6f32' }
 const input = { width: '100%', boxSizing: 'border-box', border: '1px solid #d8d0c0', background: '#fdfaf5', padding: '10px 13px', fontSize: 15, color: '#2a1f0a', outline: 'none', fontFamily: 'inherit' }
+const toolbarBtn = { background: '#f5f0e8', border: '1px solid #d8d0c0', color: '#5a4020', padding: '5px 12px', cursor: 'pointer', fontSize: 12, fontFamily: 'Cinzel, serif', letterSpacing: '0.05em' }
 const saveBtn = { background: '#1a1208', border: '1px solid #c9a84c', color: '#c9a84c', padding: '13px 32px', cursor: 'pointer', fontFamily: 'Cinzel, serif', fontSize: 12, letterSpacing: '0.2em', textTransform: 'uppercase' }
 const previewBtn = { border: '1px solid #d8d0c0', color: '#8a6f32', padding: '13px 24px', textDecoration: 'none', fontFamily: 'Cinzel, serif', fontSize: 12, letterSpacing: '0.15em', display: 'inline-block' }
