@@ -1,0 +1,55 @@
+name: Auto Publish Blog Post
+
+on:
+  schedule:
+    - cron: '0 2 * * *'   # Daily at 2:00 AM UTC — checks if any draft is due today
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Publish due drafts
+        env:
+          FEISHU_WEBHOOK_URL: ${{ secrets.FEISHU_WEBHOOK_URL }}
+        run: |
+          TODAY=$(date -u +%Y-%m-%d)
+          PUBLISHED=0
+
+          for DRAFT in $(ls content/blog/drafts/*.md 2>/dev/null | sort); do
+            FILENAME=$(basename "$DRAFT")
+            # Filename format: YYYY-MM-DD-slug.md
+            DRAFT_DATE=$(echo "$FILENAME" | grep -oE '^[0-9]{4}-[0-9]{2}-[0-9]{2}')
+            if [ -z "$DRAFT_DATE" ]; then continue; fi
+
+            # Publish if draft date <= today
+            if [[ "$DRAFT_DATE" > "$TODAY" ]]; then continue; fi
+
+            FINAL_NAME="${FILENAME#*-*-*-}"   # Remove YYYY-MM-DD- prefix
+            SLUG="${FINAL_NAME%.md}"
+
+            mv "$DRAFT" "content/blog/$FINAL_NAME"
+            PUBLISHED=$((PUBLISHED + 1))
+
+            echo "Publishing: $SLUG (scheduled $DRAFT_DATE)"
+
+            URL="https://veil.wonlv.com/blog/$SLUG"
+
+            git config user.name "Veil Bot"
+            git config user.email "bot@veil.wonlv.com"
+            git add content/blog/
+            git commit -m "blog: publish $SLUG"
+            git push
+
+            curl -s -X POST "$FEISHU_WEBHOOK_URL" \
+              -H "Content-Type: application/json" \
+              -d "{\"msg_type\":\"text\",\"content\":{\"text\":\"✨ 新文章已发布！\n📖 $SLUG\n🔗 $URL\"}}"
+          done
+
+          if [ "$PUBLISHED" -eq 0 ]; then
+            echo "No drafts due today ($TODAY)."
+          fi
