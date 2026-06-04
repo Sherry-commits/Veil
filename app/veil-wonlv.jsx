@@ -1,3 +1,4 @@
+'use client'
 import { useState } from "react";
 
 // ─── IMAGE API 预留接口 ───────────────────────────────────────────────────────
