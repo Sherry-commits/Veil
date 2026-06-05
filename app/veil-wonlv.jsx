@@ -1,5 +1,5 @@
 'use client'
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 // ─── IMAGE API 预留接口 ───────────────────────────────────────────────────────
 async function generatePortrait(element, name) {
@@ -203,7 +203,10 @@ const YEARS=Array.from({length:80},(_,i)=>2005-i);
 const EL={Water:{icon:"💧"},Fire:{icon:"🔥"},Earth:{icon:"🌿"},Metal:{icon:"⚡"},Wood:{icon:"🌳"}};
 
 function Stars(){
-  const arr=Array.from({length:65},(_,i)=>({id:i,top:Math.random()*100,left:Math.random()*100,dur:(2+Math.random()*5).toFixed(1),delay:(Math.random()*6).toFixed(1),b:(0.1+Math.random()*0.6).toFixed(2)}));
+  const [arr,setArr]=useState([]);
+  useEffect(()=>{
+    setArr(Array.from({length:65},(_,i)=>({id:i,top:Math.random()*100,left:Math.random()*100,dur:(2+Math.random()*5).toFixed(1),delay:(Math.random()*6).toFixed(1),b:(0.1+Math.random()*0.6).toFixed(2)})));
+  },[]);
   return <div className="stars">{arr.map(s=><div key={s.id} className="star" style={{top:`${s.top}%`,left:`${s.left}%`,"--dur":`${s.dur}s`,"--delay":`${s.delay}s`,"--b":s.b}}/>)}</div>;
 }
 function SigilSVG(){
