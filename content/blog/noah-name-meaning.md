@@ -8,7 +8,7 @@ tags:
   - hebrew-names
   - water-element
   - biblical-names
-description: 'Discover the true meaning of the name Noah — from Hebrew "rest" and "comfort." A name of Water element energy, carrying ancient wisdom about renewal, endurance, and navigating life\'s floods.'
+description: 'Discover the true meaning of the name Noah — from Hebrew "rest" and "comfort." A name of Water element energy, carrying ancient wisdom about renewal, endurance, and navigating life''s floods.'
 author: 'Veil by Wonlv'
 ---
 

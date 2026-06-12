@@ -1,5 +1,5 @@
 ---
-title: 'Daniel Name Meaning — The Soul Who Stands in the Lions\' Den'
+title: 'Daniel Name Meaning — The Soul Who Stands in the Lions'' Den'
 date: '2026-07-09'
 slug: daniel-name-meaning
 tags:
