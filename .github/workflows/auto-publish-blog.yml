@@ -13,6 +13,13 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install frontmatter validator deps
+        run: npm install gray-matter --no-save --no-audit --no-fund --silent
+
       - name: Publish due drafts
         env:
           FEISHU_WEBHOOK_URL: ${{ secrets.FEISHU_WEBHOOK_URL }}
@@ -33,6 +40,12 @@ jobs:
             SLUG="${FINAL_NAME%.md}"
 
             mv "$DRAFT" "content/blog/$FINAL_NAME"
+
+            # Validate frontmatter BEFORE committing/pushing. If the YAML is
+            # malformed (e.g. life\'s instead of life''s), this exits non-zero
+            # and aborts the run, so a broken post never reaches Vercel.
+            node scripts/validate-frontmatter.mjs "content/blog/$FINAL_NAME"
+
             PUBLISHED=$((PUBLISHED + 1))
 
             echo "Publishing: $SLUG (scheduled $DRAFT_DATE)"
