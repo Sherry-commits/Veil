@@ -55,7 +55,7 @@ Once you understand the origin, you can feel into its elemental quality. Ask you
 - Does it carry sharpness or refinement? (Metal)
 - Does it feel expansive and growing? (Wood)
 
-You can also use [Veil's free name reading](https://veil.wonlv.com) to discover the elemental nature of any name, including your maiden name, and receive personalized guidance based on its vibrational signature.
+You can also use [Veil's free name reading](https://veilsame.com) to discover the elemental nature of any name, including your maiden name, and receive personalized guidance based on its vibrational signature.
 
 ## The Psychology of Name and Identity
 
@@ -119,7 +119,7 @@ Once you've discovered the meaning and element of your maiden name, there are po
 
 - **Explore both names**: If you have changed your name, explore the meaning of both your maiden name and your current name. Each holds a chapter of your soul's journey. Understanding both gives you a complete picture of your growth and transformation.
 
-- **Receive a Veil reading**: The most direct way to understand the hidden wisdom of your maiden name is through a personalized oracle reading. [Veil by Wonlv](https://veil.wonlv.com) reveals your name origin, elemental nature, soul essence, and destiny guidance based on the unique vibrational signature of your name.
+- **Receive a Veil reading**: The most direct way to understand the hidden wisdom of your maiden name is through a personalized oracle reading. [Veil by Wonlv](https://veilsame.com) reveals your name origin, elemental nature, soul essence, and destiny guidance based on the unique vibrational signature of your name.
 
 ## The Deeper Truth
 
@@ -131,4 +131,4 @@ The veil is thin. Your name is the key. Are you ready to discover what it reveal
 
 ---
 
-*Uncover the hidden meaning of your maiden name and receive your personalized elemental reading. [Begin your free Veil reading now →](https://veil.wonlv.com)*
+*Uncover the hidden meaning of your maiden name and receive your personalized elemental reading. [Begin your free Veil reading now →](https://veilsame.com)*

@@ -9,7 +9,7 @@ const https = require('https')
 const fs = require('fs')
 const path = require('path')
 
-const SITE = 'veil.wonlv.com'
+const SITE = 'veilsame.com'
 const INDEX_NOW_KEY = '3218fa7301568a6036c7c8f5e300f2ef'
 const BLOG_DIR = path.join(__dirname, '../../content/blog')
 

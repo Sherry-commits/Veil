@@ -666,11 +666,11 @@ export default function App(){
               )}
 
               <div className="rfooter">
-                <div className="rfooter-txt">✦ Veil by Wonlv · veil.wonlv.com ✦</div>
+                <div className="rfooter-txt">✦ Veil by Wonlv · veilsame.com ✦</div>
                 <div style={{marginTop:8,display:'flex',justifyContent:'center',gap:16}}>
                   <a href="/privacy" className="rfooter-link">Privacy</a>
                   <a href="/terms" className="rfooter-link">Terms</a>
-                  <a href="mailto:support@veil.wonlv.com" className="rfooter-link">support@veil.wonlv.com</a>
+                  <a href="mailto:support@veilsame.com" className="rfooter-link">support@veilsame.com</a>
                 </div>
               </div>
               <button className="reset-btn" onClick={reset}>✦ Begin a New Reading ✦</button>

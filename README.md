@@ -14,4 +14,4 @@
 2. Import repo in Vercel
 3. Add environment variable: `ANTHROPIC_API_KEY`
 4. Deploy
-5. Add custom domain `veil.wonlv.com` in Vercel > Settings > Domains
+5. Add custom domain `veilsame.com` in Vercel > Settings > Domains

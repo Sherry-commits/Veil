@@ -18,7 +18,7 @@ The name **Maeve** is one of the oldest, most potent names in the Celtic world �
 
 This is not intoxication in the trivial sense. In the ancient Celtic world, intoxication was associated with **prophetic vision, divine connection, and the power to alter consciousness** — to make others see the world differently simply by being present. Maeve souls carry this energy: they are the people in the room who change the atmosphere by walking in.
 
-Discover the ancient wisdom encoded in your own name at [Veil](https://veil.wonlv.com).
+Discover the ancient wisdom encoded in your own name at [Veil](https://veilsame.com).
 
 ---
 
@@ -123,4 +123,4 @@ Maeve is not a name that aspires to power. It is a name that *is* power — carr
 
 If you carry this name, you were not given something small. You were given the name of a queen who led armies and changed the course of mythological history. Carry it accordingly.
 
-Find the full story of your elemental soul at [Veil](https://veil.wonlv.com) — your free reading is waiting.
+Find the full story of your elemental soul at [Veil](https://veilsame.com) — your free reading is waiting.

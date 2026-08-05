@@ -20,7 +20,7 @@ Emery is a Germanic name derived from the Old High German **Amalric** or **Emmer
 
 This is not the power of domination. It is the power of the capable organizer — the one who looks at a complicated situation and sees immediately what needs to happen next, and who has the energy and authority to make it so.
 
-Discover what your name reveals about your leadership nature at [Veil](https://veil.wonlv.com).
+Discover what your name reveals about your leadership nature at [Veil](https://veilsame.com).
 
 ---
 
@@ -125,4 +125,4 @@ Every functioning system — every company, every community, every well-run hous
 
 If you carry this name, or if you are drawn to the Emery archetype, you carry the ancient Germanic gift of the power-at-work: the capacity not merely to imagine what could be built, but to build it.
 
-Explore the full elemental depth of your soul at [Veil](https://veil.wonlv.com) — your name has more to tell you than you know.
+Explore the full elemental depth of your soul at [Veil](https://veilsame.com) — your name has more to tell you than you know.

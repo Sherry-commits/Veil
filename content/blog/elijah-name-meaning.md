@@ -18,7 +18,7 @@ The name **Elijah** carries one of the most electrically charged meanings in the
 
 This is not a modest statement. In the ancient Near East, to declare the identity of your God was to declare your ultimate allegiance — to say whose voice you would follow when all others fell silent. And Elijah, the great prophet of the Hebrew Bible, spent his entire life making that declaration in the most dramatic way imaginable.
 
-Discover your own elemental soul signature at [Veil](https://veil.wonlv.com).
+Discover your own elemental soul signature at [Veil](https://veilsame.com).
 
 ---
 
@@ -124,4 +124,4 @@ Elijah is not a comfortable name. It is a name that demands something — of its
 
 If you carry this name, you carry the ancient fire of the prophets. That fire is a gift and a responsibility. Tend it, rest when you must, and when the moment comes — speak.
 
-Explore the full portrait of your elemental soul at [Veil](https://veil.wonlv.com).
+Explore the full portrait of your elemental soul at [Veil](https://veilsame.com).

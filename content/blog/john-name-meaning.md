@@ -18,7 +18,7 @@ No name in the Western world has been more widely given, more consistently belov
 
 From the Hebrew **Yochanan** (יוֹחָנָן) — *Yo* (Yahweh) + *chanan* (to be gracious, to show favor) — John declares, in its very utterance, a fundamental theological conviction: that the divine impulse toward humanity is one of **gift, favor, and unearned love.**
 
-Discover what your own name reveals about your soul at [Veil](https://veil.wonlv.com).
+Discover what your own name reveals about your soul at [Veil](https://veilsame.com).
 
 ---
 
@@ -139,4 +139,4 @@ John is not a name that seeks to impress. It is a name that simply *is* — stea
 
 If you carry this name, you carry the most gracious gift in the Western naming tradition. Let it work through you as freely as it was given to you.
 
-Explore the full elemental depth of your name at [Veil](https://veil.wonlv.com).
+Explore the full elemental depth of your name at [Veil](https://veilsame.com).

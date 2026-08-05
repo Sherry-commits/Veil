@@ -18,7 +18,7 @@ The name **David** is the name of a king, a poet, a warrior, and a man described
 
 It is the simplest and perhaps the most profound thing a name can mean. Not "powerful," not "wise," not "victorious" — but *beloved.* David souls are, in the deepest sense, those who are capable of receiving love as fully as they are capable of giving it.
 
-Discover the elemental wisdom encoded in your name at [Veil](https://veil.wonlv.com).
+Discover the elemental wisdom encoded in your name at [Veil](https://veilsame.com).
 
 ---
 
@@ -131,4 +131,4 @@ David is the name of those who are loved not because they are perfect, but becau
 
 If you carry this name, you carry one of the most deeply human words in the Western tradition. Use it to create something, to love someone, to write something honest about what you have seen and felt. That is what David souls are for.
 
-Find the full elemental portrait of your soul at [Veil](https://veil.wonlv.com).
+Find the full elemental portrait of your soul at [Veil](https://veilsame.com).

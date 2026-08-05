@@ -49,7 +49,7 @@ export default function PrivacyPage() {
           <p className="last-updated">Last updated: June 1, 2026</p>
 
           <p>
-            Veil by Wonlv ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website at veil.wonlv.com (the "Site") and use our name-reading oracle service (the "Service").
+            Veil by Wonlv ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website at veilsame.com (the "Site") and use our name-reading oracle service (the "Service").
           </p>
 
           <h2>1. Information We Collect</h2>
@@ -125,7 +125,7 @@ export default function PrivacyPage() {
 
           <h2>11. Contact Us</h2>
           <p>If you have questions or concerns about this Privacy Policy or our data practices, please contact us at:</p>
-          <p><strong>Email:</strong> support@veil.wonlv.com</p>
+          <p><strong>Email:</strong> support@veilsame.com</p>
         </div>
       </div>
     </div>

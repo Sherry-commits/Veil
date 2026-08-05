@@ -18,7 +18,7 @@ The name **Ezra** carries one of the oldest and most powerful meanings in record
 
 At its core, Ezra is a name of service — not servitude, but sovereign service. The one who helps not from weakness but from an overflowing abundance of strength. The one who lifts others because they themselves stand on solid ground.
 
-Discover what your own name reveals about your elemental nature with a [free Veil reading](https://veil.wonlv.com).
+Discover what your own name reveals about your elemental nature with a [free Veil reading](https://veilsame.com).
 
 ---
 
@@ -150,4 +150,4 @@ The name Ezra is not merely a label. It is a declaration: *I am here to help, an
 
 If you carry this name, know that the ancient Hebrew scribes who gave it meaning understood something that still holds true: the greatest service is not a diminishment of self, but an expression of one's fullest power offered freely to those who need it.
 
-Curious what your complete elemental profile reveals? Explore the full depth of your name's wisdom with a [free reading at Veil](https://veil.wonlv.com) — and discover what the ancient oracle sees in you.
+Curious what your complete elemental profile reveals? Explore the full depth of your name's wisdom with a [free reading at Veil](https://veilsame.com) — and discover what the ancient oracle sees in you.

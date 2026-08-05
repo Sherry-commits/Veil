@@ -20,7 +20,7 @@ The core meaning, across most traditions: **"sea," "ocean,"** or **"water."**
 
 If you carry the name Kai, you are connected to the element that covers more than 70% of our planet and gave birth to all life upon it. You carry the ancient, restless depth of the ocean in your name.
 
-Discover your elemental soul signature at [Veil](https://veil.wonlv.com).
+Discover your elemental soul signature at [Veil](https://veilsame.com).
 
 ---
 
@@ -132,4 +132,4 @@ Kai is the name of those who move through the world with the ease of water — a
 
 If you carry this name, you carry the ocean. That is more than enough.
 
-Discover the full depth of your elemental profile at [Veil](https://veil.wonlv.com).
+Discover the full depth of your elemental profile at [Veil](https://veilsame.com).

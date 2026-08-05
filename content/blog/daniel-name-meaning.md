@@ -18,7 +18,7 @@ The name **Daniel** is one of the most globally beloved names in human history â
 
 This is a declaration of extraordinary liberation. To say "God is my judge" is to say: *no human tribunal, no social pressure, no earthly authority holds the final word over my soul.* It is the foundation of the Daniel character: the capacity to stand in the presence of the most powerful human forces imaginable and remain, quietly, completely, unmoved.
 
-Discover the ancient wisdom your name carries at [Veil](https://veil.wonlv.com).
+Discover the ancient wisdom your name carries at [Veil](https://veilsame.com).
 
 ---
 
@@ -121,4 +121,4 @@ Daniel is the name of those who have found, whether through grace or great diffi
 
 If you carry this name, you carry that capacity. The lions will come. They always do. And you will still be standing when they are gone.
 
-Explore the full elemental depth of your name at [Veil](https://veil.wonlv.com).
+Explore the full elemental depth of your name at [Veil](https://veilsame.com).

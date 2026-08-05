@@ -48,7 +48,7 @@ export default function TermsPage() {
           <h1>Terms of Service</h1>
           <p className="last-updated">Last updated: June 1, 2026</p>
 
-          <p>Welcome to Veil by Wonlv. By accessing or using our website at veil.wonlv.com (the "Site") and our name-reading oracle service (the "Service"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree with any part of these Terms, please do not use our Service.</p>
+          <p>Welcome to Veil by Wonlv. By accessing or using our website at veilsame.com (the "Site") and our name-reading oracle service (the "Service"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree with any part of these Terms, please do not use our Service.</p>
 
           <h2>1. Description of Service</h2>
           <p>Veil by Wonlv provides an AI-powered name-reading oracle that generates personalized interpretations including name origin analysis, elemental personality insights, and destiny guidance. The Service includes a free reading option and a paid "Full Destiny" reading that incorporates birth date information.</p>
@@ -73,7 +73,7 @@ export default function TermsPage() {
           <p>The Full Destiny reading is priced at $9.90 (USD) as a one-time purchase. Prices are subject to change with notice. Payment is processed securely through our third-party payment processor, Creem.</p>
 
           <h3>Refund Policy</h3>
-          <p>Due to the digital nature of our Service (AI-generated readings are delivered instantly upon payment), all purchases are final and non-refundable. If you experience a technical issue that prevents you from receiving your reading, please contact our support team at support@veil.wonlv.com, and we will work to resolve the issue.</p>
+          <p>Due to the digital nature of our Service (AI-generated readings are delivered instantly upon payment), all purchases are final and non-refundable. If you experience a technical issue that prevents you from receiving your reading, please contact our support team at support@veilsame.com, and we will work to resolve the issue.</p>
 
           <h2>5. Intellectual Property</h2>
           <p>All content on the Site, including but not limited to text, graphics, logos, brand design, and the Veil by Wonlv name and branding, is our intellectual property or used with permission. The AI-generated reading content delivered to you is for your personal use only. You may not reproduce, modify, or distribute it commercially without our permission.</p>
@@ -115,7 +115,7 @@ export default function TermsPage() {
 
           <h2>14. Contact Information</h2>
           <p>For questions, concerns, or support regarding these Terms or our Service, please contact us at:</p>
-          <p><strong>Email:</strong> support@veil.wonlv.com</p>
+          <p><strong>Email:</strong> support@veilsame.com</p>
         </div>
       </div>
     </div>

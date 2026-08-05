@@ -18,7 +18,7 @@ The name **Elias** is one of the most spiritually charged names in Western civil
 
 Elias is the Greek and Latin form of the Hebrew name **Elijah** (אֵלִיָּהוּ, *Eliyahu*). It entered Western Europe through the Septuagint — the Greek translation of the Hebrew scriptures — and spread through the Christian world, becoming beloved across Spain (Elías), Germany, Scandinavia, and the English-speaking world.
 
-Discover what your own name reveals with a [free Veil reading](https://veil.wonlv.com).
+Discover what your own name reveals with a [free Veil reading](https://veilsame.com).
 
 ---
 
@@ -116,4 +116,4 @@ To carry the name Elias is to carry the echo of a voice that has spoken across m
 
 If you bear this name, you are part of a long lineage of those who were willing to stand in the wilderness and speak. That has always been, and will always be, a form of sacred service.
 
-Explore the full depth of your elemental profile at [Veil](https://veil.wonlv.com) — your free name reading awaits.
+Explore the full depth of your elemental profile at [Veil](https://veilsame.com) — your free name reading awaits.

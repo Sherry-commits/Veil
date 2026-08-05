@@ -18,7 +18,7 @@ export async function generateMetadata({ params }) {
     title: `${post.frontmatter.title} | Veil Blog`,
     description: post.frontmatter.description,
     alternates: {
-      canonical: `https://veil.wonlv.com/blog/${params.slug}`,
+      canonical: `https://veilsame.com/blog/${params.slug}`,
     },
     openGraph: {
       title: post.frontmatter.title,

@@ -18,7 +18,7 @@ The name **Noah** is among the most ancient in human recorded history — and am
 
 If you carry the name Noah, you are connected to one of humanity's oldest archetypes: **the one who holds steady when the waters rise.** And the waters always rise.
 
-Explore your own name's ancient meaning with a [free Veil reading](https://veil.wonlv.com).
+Explore your own name's ancient meaning with a [free Veil reading](https://veilsame.com).
 
 ---
 
@@ -128,4 +128,4 @@ Every generation produces its Noahs — those who, while others scramble and pan
 
 If you carry this name, you carry the ancient gift of the still center. In a world that is always rising and falling, you are the ground that holds.
 
-Discover the full depth of your elemental soul at [Veil](https://veil.wonlv.com) — where your name reveals the wisdom you were born carrying.
+Discover the full depth of your elemental soul at [Veil](https://veilsame.com) — where your name reveals the wisdom you were born carrying.

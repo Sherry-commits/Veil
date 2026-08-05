@@ -18,7 +18,7 @@ The name **Calliope** is one of the most poetically beautiful in the entire Gree
 
 If you carry the name Calliope, you are named for the eldest and most honored of the nine Greek Muses — the divine being who inspired Homer to write the Iliad and Odyssey, who breathed creative fire into the greatest storytellers in Western literary history.
 
-Discover what your name reveals about your creative gifts at [Veil](https://veil.wonlv.com).
+Discover what your name reveals about your creative gifts at [Veil](https://veilsame.com).
 
 ---
 
@@ -122,4 +122,4 @@ The right word at the right moment can change a life, shift a culture, or carry 
 
 If you carry this name, you carry a creative inheritance of extraordinary depth. The Muse who inspired Homer is, in some sense, always with you — breathing her gifts into your voice, your pen, your way of seeing the world.
 
-Explore the full story your name tells at [Veil](https://veil.wonlv.com) — your free elemental reading is waiting.
+Explore the full story your name tells at [Veil](https://veilsame.com) — your free elemental reading is waiting.

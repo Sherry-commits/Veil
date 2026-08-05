@@ -18,7 +18,7 @@ The name **Silas** is one of those rare names that carries both its age and its 
 
 Most commonly, Silas means **"of the forest"** or **"wood,"** from the Latin *silva*. Some scholars connect it alternatively to the Aramaic *Sha'ul* (Paul's Hebrew name) or to a shortened form of **Silvanus** — the Roman god of the forest, fields, and the wild margins between civilization and nature.
 
-Discover the elemental wisdom encoded in your name at [Veil](https://veil.wonlv.com).
+Discover the elemental wisdom encoded in your name at [Veil](https://veilsame.com).
 
 ---
 
@@ -123,4 +123,4 @@ In a culture that prizes speed and surface, the Silas soul offers something incr
 
 The ancient forests did not become ancient by being hasty. They became ancient by holding their ground, year after year, through every season that came. If you carry the name Silas, you carry that same capacity — the quiet, extraordinary gift of endurance made beautiful.
 
-Discover the full elemental portrait of your soul at [Veil](https://veil.wonlv.com).
+Discover the full elemental portrait of your soul at [Veil](https://veilsame.com).

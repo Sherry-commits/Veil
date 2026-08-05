@@ -20,7 +20,7 @@ Elizabeth derives from the Hebrew name **Elisheba** (אֱלִישֶׁבַע), me
 
 An oath is a promise made with the full weight of one's being. Abundance is the overflow of a life lived in alignment with that promise. Elizabeth souls, at their deepest level, are people of sacred commitment — and that commitment tends to produce lives of remarkable richness.
 
-Discover your own elemental name reading at [Veil](https://veil.wonlv.com).
+Discover your own elemental name reading at [Veil](https://veilsame.com).
 
 ---
 
@@ -143,4 +143,4 @@ Elizabeth is not a name that shouts. It is a name that *endures* — and in endu
 
 If you bear this name, you carry one of the most powerful legacies in human naming history. You are, in the deepest sense, a keeper of what matters.
 
-Find out more about what your name's ancient wisdom reveals at [Veil](https://veil.wonlv.com).
+Find out more about what your name's ancient wisdom reveals at [Veil](https://veilsame.com).

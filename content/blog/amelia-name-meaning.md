@@ -18,7 +18,7 @@ The name **Amelia** sounds like wings — and it is no coincidence that the most
 
 More precisely, Amelia derives from the Germanic **Amal** (the royal Gothic clan name, related to "work" or "vigor") combined in some analyses with **Latin Amalia** or **Emily/Amelia** forms that softened and feminized the Germanic original. The name entered the English-speaking world in the 18th century through German royal influence and never looked back.
 
-Discover the elemental wisdom your name carries at [Veil](https://veil.wonlv.com).
+Discover the elemental wisdom your name carries at [Veil](https://veilsame.com).
 
 ---
 
@@ -120,4 +120,4 @@ Amelia is the name of those who look at what others call a ceiling and see, inst
 
 If you carry this name, you carry Earhart's inheritance: the permission to go further, to work harder, and to remain airborne longer than anyone expects. Use it.
 
-Explore the full portrait of your elemental soul at [Veil](https://veil.wonlv.com).
+Explore the full portrait of your elemental soul at [Veil](https://veilsame.com).

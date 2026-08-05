@@ -20,7 +20,7 @@ Tristan derives from the Celtic name **Drest** or **Drustan**, likely meaning **
 
 What does the Bible say about Tristan? While the name itself does not appear in scripture, Tristan souls carry qualities that resonate deeply with Biblical archetypes — particularly the prophets and the warriors of faith who moved through the world with fierce, undivided devotion.
 
-Learn what your own name reveals with a [free Veil reading](https://veil.wonlv.com).
+Learn what your own name reveals with a [free Veil reading](https://veilsame.com).
 
 ---
 
@@ -126,4 +126,4 @@ Tristan is the name of those who feel the world too fully to ever be entirely co
 
 Whether your Tristan carries the legacy of Celtic myth, the resonance of Biblical archetypes, or simply the beauty of a name that has never compromised its intensity — you carry something rare. Do not quiet it.
 
-Discover the full elemental portrait of your soul at [Veil](https://veil.wonlv.com).
+Discover the full elemental portrait of your soul at [Veil](https://veilsame.com).

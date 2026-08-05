@@ -20,7 +20,7 @@ Not merely the time of day. **The phenomenon** — the moment when the sky begin
 
 If you carry this name, you carry the energy of beginnings — and every beginning is, in some sense, a small act of creation.
 
-Discover your elemental soul signature at [Veil](https://veil.wonlv.com).
+Discover your elemental soul signature at [Veil](https://veilsame.com).
 
 ---
 
@@ -142,4 +142,4 @@ Aurora souls are the people who know this — who carry the knowledge in their b
 
 If you carry this name, you carry the first light of every day. That is not a small thing. It is, in fact, everything.
 
-Discover the full elemental story of your soul at [Veil](https://veil.wonlv.com) — your free reading is waiting, like a sky that is about to change color.
+Discover the full elemental story of your soul at [Veil](https://veilsame.com) — your free reading is waiting, like a sky that is about to change color.

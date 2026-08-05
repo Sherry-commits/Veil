@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 
-const SITE_URL = 'https://veil.wonlv.com';
+const SITE_URL = 'https://veilsame.com';
 
 export default async function sitemap() {
   const staticPages = [

@@ -63,4 +63,4 @@ The veil between the known and the unknown is thin. Are you ready to see what li
 
 ---
 
-*Ready to discover the secrets within your name? [Begin your free Veil reading now →](https://veil.wonlv.com)*
+*Ready to discover the secrets within your name? [Begin your free Veil reading now →](https://veilsame.com)*
