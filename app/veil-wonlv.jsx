@@ -1,17 +1,19 @@
 'use client'
 import { useState, useEffect } from "react";
 
-// ─── IMAGE API 预留接口 ───────────────────────────────────────────────────────
+// ─── IMAGE API ────────────────────────────────────────────────────────────────
 async function generatePortrait(element, name) {
-  // TODO: 接入图像生成API (DALL-E / Stable Diffusion 等)
-  // const res = await fetch("https://api.openai.com/v1/images/generations", {
-  //   method: "POST",
-  //   headers: { "Content-Type": "application/json", "Authorization": `Bearer ${YOUR_KEY}` },
-  //   body: JSON.stringify({ model: "gpt-image-1", prompt: buildImagePrompt(element, name), n: 1, size: "1024x1536" })
-  // });
-  // const data = await res.json();
-  // return data.data?.[0]?.url || null;
-  return null;
+  try {
+    const res = await fetch("/api/oracle/image", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ prompt: buildImagePrompt(element, name) }),
+    });
+    const data = await res.json();
+    return data.data?.[0]?.url || data.url || null;
+  } catch {
+    return null;
+  }
 }
 function buildImagePrompt(element, name) {
   const s = { Water:"deep indigo and silver, moonlight, ocean mystery", Fire:"crimson and molten gold, ember glow, fierce energy", Earth:"forest green and amber, ancient stone, grounded power", Metal:"silver-white crystal, geometric light, ethereal clarity", Wood:"jade and sage, blooming vines, ancient forest" };
@@ -389,6 +391,12 @@ export default function App(){
     if (parsed) {
       setResult({ ...parsed, inputName: name.trim() });
       setIsPaid(mode === "paid");
+      // 异步生图，不阻塞结果展示
+      if (parsed.element) {
+        generatePortrait(parsed.element, name.trim()).then(url => {
+          if (url) setPortraitUrl(url);
+        });
+      }
     } else if (!result) {
       setError("The oracle is silent. Please try again.");
     }

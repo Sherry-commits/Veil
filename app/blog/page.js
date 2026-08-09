@@ -5,6 +5,22 @@ import './../blog.css';
 export const metadata = {
   title: 'Blog | Veil by Wonlv',
   description: 'Discover the ancient wisdom of name origins, elemental personalities, and destiny guidance. Explore articles about the five elements, name meanings, and spiritual self-discovery.',
+  alternates: {
+    canonical: 'https://veilsame.com/blog',
+  },
+  openGraph: {
+    title: 'Veil Blog — Name Origins & Elemental Wisdom',
+    description: 'Discover the ancient wisdom of name origins, elemental personalities, and destiny guidance.',
+    type: 'website',
+    siteName: 'Veil by Wonlv',
+    locale: 'en_US',
+    url: 'https://veilsame.com/blog',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Veil Blog — Name Origins & Elemental Wisdom',
+    description: 'Discover the ancient wisdom of name origins, elemental personalities, and destiny guidance.',
+  },
 };
 
 function Stars() {
@@ -39,8 +55,48 @@ function Stars() {
 export default function BlogPage() {
   const posts = getAllPosts();
 
+  const blogJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Blog',
+    '@id': 'https://veilsame.com/blog#blog',
+    name: 'Veil Blog',
+    description: 'Discover the ancient wisdom of name origins, elemental personalities, and destiny guidance.',
+    url: 'https://veilsame.com/blog',
+    blogPost: posts.map((post, i) => ({
+      '@type': 'BlogPosting',
+      '@id': `https://veilsame.com/blog/${post.slug}#article`,
+      headline: post.frontmatter.title,
+      description: post.frontmatter.description,
+      datePublished: post.frontmatter.date,
+      url: `https://veilsame.com/blog/${post.slug}`,
+      position: i + 1,
+    })),
+    publisher: {
+      '@type': 'Organization',
+      name: 'Veil by Wonlv',
+      url: 'https://veilsame.com',
+    },
+  };
+
+  const breadcrumbJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Veil', item: 'https://veilsame.com' },
+      { '@type': 'ListItem', position: 2, name: 'Blog' },
+    ],
+  };
+
   return (
     <div className="blog-page">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
       <Stars />
       <div className="blog-wrap">
         <header className="blog-header">
